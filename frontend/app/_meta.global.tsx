@@ -28,39 +28,6 @@ export default {
     title: "Assignments",
     items: {
       index: "",
-      "file-conventions": {
-        items: {
-          _: {
-            type: "separator",
-            title: "Files",
-          },
-          "page-file": <Code>page.mdx</Code>,
-          "meta-file": <Code>_meta.js</Code>,
-          "mdx-components-file": <Code>mdx-components.js</Code>,
-          _2: {
-            href: "https://nextjs.org/docs/app/api-reference/file-conventions/page",
-            title: <ExternalLink>page.jsx</ExternalLink>,
-          },
-          _3: {
-            href: "https://nextjs.org/docs/app/api-reference/file-conventions/layout",
-            title: <ExternalLink>layout.jsx</ExternalLink>,
-          },
-          _4: {
-            type: "separator",
-            title: "Top-Level Folders",
-          },
-          "content-directory": <Code>content</Code>,
-          "src-directory": <Code>src</Code>,
-          _5: {
-            href: "https://nextjs.org/docs/app/getting-started/installation#create-the-app-directory",
-            title: <ExternalLink>app</ExternalLink>,
-          },
-          _6: {
-            href: "https://nextjs.org/docs/app/building-your-application/optimizing/static-assets",
-            title: <ExternalLink>public</ExternalLink>,
-          },
-        },
-      },
       guide: {
         items: {
           markdown: "",
