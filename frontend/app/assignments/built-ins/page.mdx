@@ -9,11 +9,11 @@ import {
   IdCardIcon,
   OneIcon,
   TableIcon,
-  WarningIcon
-} from '@components/icons'
-import { Cards } from 'nextra/components'
-import { MDXRemote } from 'nextra/mdx-remote'
-import { createIndexPage, getPageMap } from 'nextra/page-map'
+  WarningIcon,
+} from "@components/icons";
+import { Cards } from "nextra/components";
+import { MDXRemote } from "nextra/mdx-remote";
+import { createIndexPage, getPageMap } from "nextra/page-map";
 
 # Built-ins
 
@@ -21,7 +21,9 @@ Nextra includes a couple of built-in components that you can use to better style
 your content:
 
 <MDXRemote
-  compiledSource={await createIndexPage(await getPageMap('/docs/built-ins'))}
+  compiledSource={await createIndexPage(
+    await getPageMap("/assignments/built-ins")
+  )}
   components={{
     Cards,
     WarningIcon,
@@ -29,6 +31,6 @@ your content:
     IdCardIcon,
     OneIcon,
     FolderTreeIcon,
-    TableIcon
+    TableIcon,
   }}
 />

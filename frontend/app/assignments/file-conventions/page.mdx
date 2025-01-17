@@ -3,22 +3,22 @@ asIndexPage: true
 description: API Reference for Nextra File Conventions
 ---
 
-import { Cards, FileTree } from 'nextra/components'
-import { FileIcon, FolderIcon, MdxIcon } from 'nextra/icons'
-import { MDXRemote } from 'nextra/mdx-remote'
-import { createIndexPage, getPageMap } from 'nextra/page-map'
+import { Cards, FileTree } from "nextra/components";
+import { FileIcon, FolderIcon, MdxIcon } from "nextra/icons";
+import { MDXRemote } from "nextra/mdx-remote";
+import { createIndexPage, getPageMap } from "nextra/page-map";
 
 # File Conventions
 
 <MDXRemote
   compiledSource={await createIndexPage(
-    await getPageMap('/docs/file-conventions')
+    await getPageMap("/assignments/file-conventions")
   )}
   components={{
     Cards,
     FileIcon,
     FolderIcon,
-    MdxIcon
+    MdxIcon,
   }}
 />
 

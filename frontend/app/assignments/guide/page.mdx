@@ -8,12 +8,12 @@ import {
   LightningIcon,
   LinkIcon,
   PictureIcon,
-  StarsIcon
-} from '@components/icons'
-import { Cards } from 'nextra/components'
-import { InformationCircleIcon, MarkdownIcon } from 'nextra/icons'
-import { MDXRemote } from 'nextra/mdx-remote'
-import { createIndexPage, getPageMap } from 'nextra/page-map'
+  StarsIcon,
+} from "@components/icons";
+import { Cards } from "nextra/components";
+import { InformationCircleIcon, MarkdownIcon } from "nextra/icons";
+import { MDXRemote } from "nextra/mdx-remote";
+import { createIndexPage, getPageMap } from "nextra/page-map";
 
 # Guide
 
@@ -21,7 +21,7 @@ The following features are configured via the Next.js configuration and are
 available in all themes.
 
 <MDXRemote
-  compiledSource={await createIndexPage(await getPageMap('/docs/guide'))}
+  compiledSource={await createIndexPage(await getPageMap("/assignments/guide"))}
   components={{
     Cards,
     MarkdownIcon,
@@ -31,6 +31,6 @@ available in all themes.
     LightningIcon,
     PictureIcon,
     BrushIcon,
-    InformationCircleIcon
+    InformationCircleIcon,
   }}
 />

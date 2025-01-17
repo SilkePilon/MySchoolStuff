@@ -5,16 +5,18 @@ sidebarTitle: Docs Theme
 
 # Nextra Docs Theme
 
-import { BoxIcon, ChevronRightIcon } from '@components/icons'
-import { Cards } from 'nextra/components'
-import { MDXRemote } from 'nextra/mdx-remote'
-import { createIndexPage, getPageMap } from 'nextra/page-map'
+import { BoxIcon, ChevronRightIcon } from "@components/icons";
+import { Cards } from "nextra/components";
+import { MDXRemote } from "nextra/mdx-remote";
+import { createIndexPage, getPageMap } from "nextra/page-map";
 
 <MDXRemote
-  compiledSource={await createIndexPage(await getPageMap('/docs/docs-theme'))}
+  compiledSource={await createIndexPage(
+    await getPageMap("/assignments/docs-theme")
+  )}
   components={{
     Cards,
     ChevronRightIcon,
-    BoxIcon
+    BoxIcon,
   }}
 />
