@@ -1,33 +1,33 @@
-import { ArrowRightIcon } from '@components/icons'
-import type { Metadata } from 'next'
-import Image from 'next/image'
-import { Link } from 'nextra-theme-docs'
-import { MdxIcon } from 'nextra/icons'
-import docsCardDark from 'public/assets/card-1.dark.png'
-import docsCard from 'public/assets/card-1.png'
-import { Feature, Features } from './_components/features'
-import { MotionDiv, MotionH3 } from './_components/framer-motion'
-import { I18n } from './_components/i18n-demo'
-import styles from './page.module.css'
-import './page.css'
-import type { FC } from 'react'
+import { ArrowRightIcon } from "@components/icons";
+import type { Metadata } from "next";
+import Image from "next/image";
+import { Link } from "nextra-theme-docs";
+import { MdxIcon } from "nextra/icons";
+import docsCardDark from "public/assets/card-1.dark.png";
+import docsCard from "public/assets/card-1.png";
+import { Feature, Features } from "./_components/features";
+import { MotionDiv, MotionH3 } from "./_components/framer-motion";
+import { I18n } from "./_components/i18n-demo";
+import styles from "./page.module.css";
+import "./page.css";
+import type { FC } from "react";
 
 export const metadata: Metadata = {
-  title: 'Nextra – Next.js Static Site Generator'
-}
+  title: "Nextra – Next.js Static Site Generator",
+};
 
 const IndexPage: FC = () => {
   return (
     <div className="home-content">
       <div className="content-container">
         <h1 className="headline">
-          Make beautiful websites <br className="max-sm:hidden" />
-          with Next.js & MDX
+          Silke Pilon's <br className="max-sm:hidden" />
+          School Assingment Database
         </h1>
         <p className="subtitle">
-          Simple, powerful and flexible site generation framework{' '}
+          Simple, powerful and flexible site generation framework{" "}
           <br className="max-md:hidden" />
-          with everything you love from{' '}
+          with everything you love from{" "}
           <Link href="https://nextjs.org" className="text-current">
             Next.js
           </Link>
@@ -35,7 +35,7 @@ const IndexPage: FC = () => {
         </p>
         <p className="subtitle">
           <Link className={styles.cta} href="/docs">
-            Get started <span>→</span>
+            See Completed Assignments <span>→</span>
           </Link>
         </p>
       </div>
@@ -66,19 +66,19 @@ const IndexPage: FC = () => {
                 always <span className="font-light">optimized</span>
               </h3>
               <p className="mb-8 text-start">
-                Nextra automatically converts Markdown links and images to use{' '}
+                Nextra automatically converts Markdown links and images to use{" "}
                 <Link href="https://nextjs.org/docs/routing/introduction#linking-between-pages">
                   Next.js Link
-                </Link>{' '}
-                and{' '}
+                </Link>{" "}
+                and{" "}
                 <Link href="https://nextjs.org/docs/basic-features/image-optimization#local-images">
                   Next.js Image
-                </Link>{' '}
+                </Link>{" "}
                 when possible. No slow navigation or layout shift.
               </p>
               <div>
                 <div className={styles.optimization}>
-                  <div style={{ fontSize: '.9rem' }} className="leading-8">
+                  <div style={{ fontSize: ".9rem" }} className="leading-8">
                     <code>[Learn more](/more)</code>
                     <br />
                     <code>![Hero](/hero.png)</code>
@@ -89,10 +89,10 @@ const IndexPage: FC = () => {
                   className="mx-auto my-6 rotate-90 text-neutral-400"
                 />
                 <div className={styles.optimization}>
-                  <div style={{ fontSize: '.9rem' }} className="leading-8">
-                    <code>{'<Link .../>'}</code>
+                  <div style={{ fontSize: ".9rem" }} className="leading-8">
+                    <code>{"<Link .../>"}</code>
                     <br />
-                    <code>{'<Image .../>'}</code>
+                    <code>{"<Image .../>"}</code>
                   </div>
                 </div>
               </div>
@@ -129,14 +129,14 @@ const IndexPage: FC = () => {
               href="/docs/guide/markdown"
             >
               <MdxIcon className="w-4/6 [filter:drop-shadow(0_2px_10px_rgba(0,0,0,.1))]" />
-              <p style={{ textShadow: '0 2px 4px rgb(0 0 0 / 20%)' }}>
+              <p style={{ textShadow: "0 2px 4px rgb(0 0 0 / 20%)" }}>
                 <Link
                   href="https://mdxjs.com/blog/v3"
                   className="!text-current"
                 >
                   MDX 3
-                </Link>{' '}
-                lets you use Components inside Markdown,{' '}
+                </Link>{" "}
+                lets you use Components inside Markdown,{" "}
                 <br className="hide-medium" />
                 with huge performance boost since v1.
               </p>
@@ -149,59 +149,59 @@ const IndexPage: FC = () => {
               <MotionDiv
                 animate={{
                   backgroundPosition: [
-                    '0% 0%',
-                    '50% 40%',
-                    '50% 40%',
-                    '100% 100%'
+                    "0% 0%",
+                    "50% 40%",
+                    "50% 40%",
+                    "100% 100%",
                   ],
                   backgroundImage: [
-                    'radial-gradient(farthest-corner, #e2e5ea, #e2e5ea)',
-                    'radial-gradient(farthest-corner, #06080a, #e2e5ea)',
-                    'radial-gradient(farthest-corner, #06080a, #e2e5ea)',
-                    'radial-gradient(farthest-corner, #e2e5ea, #e2e5ea)'
-                  ]
+                    "radial-gradient(farthest-corner, #e2e5ea, #e2e5ea)",
+                    "radial-gradient(farthest-corner, #06080a, #e2e5ea)",
+                    "radial-gradient(farthest-corner, #06080a, #e2e5ea)",
+                    "radial-gradient(farthest-corner, #e2e5ea, #e2e5ea)",
+                  ],
                 }}
                 transition={{
                   backgroundPosition: {
                     times: [0, 0.5, 0.5, 1],
                     repeat: Infinity,
                     duration: 10,
-                    delay: 1
+                    delay: 1,
                   },
                   backgroundImage: {
                     times: [0, 0.2, 0.8, 1],
                     repeat: Infinity,
                     duration: 10,
-                    delay: 1
-                  }
+                    delay: 1,
+                  },
                 }}
                 style={{
-                  position: 'absolute',
+                  position: "absolute",
                   top: 0,
                   left: 0,
-                  width: '100%',
-                  height: '100%',
+                  width: "100%",
+                  height: "100%",
                   backgroundImage:
-                    'radial-gradient(farthest-corner, #06080a, #e2e5ea)',
-                  backgroundSize: '400% 400%',
-                  backgroundRepeat: 'no-repeat'
+                    "radial-gradient(farthest-corner, #06080a, #e2e5ea)",
+                  backgroundSize: "400% 400%",
+                  backgroundRepeat: "no-repeat",
                 }}
               />
               <MotionH3
                 animate={{
-                  color: ['#dae5ff', '#fff', '#fff', '#dae5ff']
+                  color: ["#dae5ff", "#fff", "#fff", "#dae5ff"],
                 }}
                 transition={{
                   color: {
                     times: [0.25, 0.35, 0.7, 0.8],
                     repeat: Infinity,
                     duration: 10,
-                    delay: 1
-                  }
+                    delay: 1,
+                  },
                 }}
                 style={{
-                  position: 'relative',
-                  mixBlendMode: 'difference'
+                  position: "relative",
+                  mixBlendMode: "difference",
                 }}
               >
                 Dark <br />
@@ -222,7 +222,7 @@ const IndexPage: FC = () => {
               </h3>
               <p className="z-2">
                 Nextra indexes your content automatically at build-time and
-                performs incredibly fast full-text search via{' '}
+                performs incredibly fast full-text search via{" "}
                 <Link href="https://github.com/cloudcannon/pagefind">
                   Pagefind
                 </Link>
@@ -253,14 +253,14 @@ const IndexPage: FC = () => {
               large
               id="fs-card"
               style={{
-                color: 'white',
+                color: "white",
                 backgroundImage:
-                  'url(/assets/routing.png), url(/assets/gradient-bg.jpeg)',
-                backgroundSize: '140%, 180%',
-                backgroundPosition: '130px -8px, top',
-                backgroundRepeat: 'no-repeat',
-                textShadow: '0 1px 6px rgb(38 59 82 / 18%)',
-                aspectRatio: '1.765'
+                  "url(/assets/routing.png), url(/assets/gradient-bg.jpeg)",
+                backgroundSize: "140%, 180%",
+                backgroundPosition: "130px -8px, top",
+                backgroundRepeat: "no-repeat",
+                textShadow: "0 1px 6px rgb(38 59 82 / 18%)",
+                aspectRatio: "1.765",
               }}
               href="/docs/docs-theme/page-configuration"
             >
@@ -274,8 +274,8 @@ const IndexPage: FC = () => {
               id="a11y-card"
               style={{
                 backgroundSize: 750,
-                backgroundRepeat: 'no-repeat',
-                minHeight: 288
+                backgroundRepeat: "no-repeat",
+                minHeight: 288,
               }}
             >
               <h3>A11y as a top priority</h3>
@@ -291,15 +291,15 @@ const IndexPage: FC = () => {
               </h3>
               <p className="mr-6">
                 You can leverage the hybrid rendering power from Next.js with
-                your Markdown content including{' '}
+                your Markdown content including{" "}
                 <Link href="https://nextjs.org/docs/app/getting-started/layouts-and-pages">
                   SSG
                 </Link>
-                ,{' '}
+                ,{" "}
                 <Link href="https://nextjs.org/docs/app/getting-started/layouts-and-pages">
                   SSR
                 </Link>
-                , and{' '}
+                , and{" "}
                 <Link href="https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration">
                   ISR
                 </Link>
@@ -323,7 +323,7 @@ const IndexPage: FC = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
