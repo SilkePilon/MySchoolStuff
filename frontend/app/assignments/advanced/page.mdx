@@ -7,17 +7,19 @@ import {
   DiagramIcon,
   FormulaIcon,
   TableIcon,
-  TailwindIcon
-} from '@components/icons'
-import { Cards } from 'nextra/components'
-import { TerminalIcon, TypeScriptIcon } from 'nextra/icons'
-import { MDXRemote } from 'nextra/mdx-remote'
-import { createIndexPage, getPageMap } from 'nextra/page-map'
+  TailwindIcon,
+} from "@components/icons";
+import { Cards } from "nextra/components";
+import { TerminalIcon, TypeScriptIcon } from "nextra/icons";
+import { MDXRemote } from "nextra/mdx-remote";
+import { createIndexPage, getPageMap } from "nextra/page-map";
 
 # Advanced
 
 <MDXRemote
-  compiledSource={await createIndexPage(await getPageMap('/docs/advanced'))}
+  compiledSource={await createIndexPage(
+    await getPageMap("/assignments/advanced")
+  )}
   components={{
     Cards,
     TerminalIcon,
@@ -26,6 +28,6 @@ import { createIndexPage, getPageMap } from 'nextra/page-map'
     FormulaIcon,
     TableIcon,
     TypeScriptIcon,
-    CloudIcon
+    CloudIcon,
   }}
 />
