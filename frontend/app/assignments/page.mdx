@@ -1,55 +1,46 @@
-import { Cards } from 'nextra/components'
+import { Cards } from "nextra/components";
 
 # Introduction
 
-**Nextra** is a framework on top of Next.js, that lets you build content focused
-websites. It has all the great features from Next.js, plus extra power to create
-Markdown-based content with ease.
+**Assignment Portal** is my personal website for organizing and accessing all my school assignments in one place. Here you can find my work for different subjects, making it easy to review and track my academic progress.
 
 ## Quick Start
 
-To start using Nextra, you need to select a theme first:
+Select one of your subjects to view its assignments:
 
 <Cards num={2}>
-  <Cards.Card arrow title="Documentation theme" href="/docs/docs-theme/start">
-    <>![Documentation theme](/assets/docs-theme.png)</>
+  <Cards.Card arrow title="Core Subjects" href="/docs/core-subjects">
+    {/* <>![Core Subjects](/assets/core-subjects.png)</> */}
+    Find assignments for Nederlands, Engels, and Rekenen
   </Cards.Card>
-  <Cards.Card arrow title="Blog theme" href="/docs/blog-theme/start">
-    <>![Blog theme](/assets/blog-theme.png)</>
+  <Cards.Card
+    arrow
+    title="Vocational Subjects"
+    href="/docs/vocational-subjects"
+  >
+    {/* <>![Vocational Subjects](/assets/vocational-subjects.png)</> */}
+    Access your LB and Software Development work
   </Cards.Card>
 </Cards>
 
-If you want to use Nextra without using these built-in themes, you can follow
-the [Custom Theme](/docs/custom-theme) docs.
-
 ## FAQ
 
-The Nextra FAQ is a collection of useful questions and answers about the
-project. If you have a question that isn't answered here, please
-[open a discussion](https://github.com/shuding/nextra/discussions).
+A collection of common questions about finding and accessing assignments.
 
 <details open>
-  {/* prettier-ignore */}
-  <summary className="mb-2">Can I use Nextra with Next.js `pages` router?</summary>
-  Nextra 4 only works with the `app` router. Only Nextra 1/2/3 supports the
-  `pages` router.
+  <summary className="mb-2">How are assignments organized?</summary>
+  Each subject has its own section with assignments sorted by date. You can easily
+  find both current and past work.
 </details>
 
 <details open>
-  <summary className="mb-2">Can I use X with Nextra?</summary>
-  The answer is "yes" for most things. Since Nextra is just a Next.js plugin, almost all the things
-  that can be done with React can be done with Nextra. Here are some examples and guides:
-
-- [Use Tailwind CSS](/docs/guide/tailwind-css)
-- [Use custom CSS and Sass](/docs/guide/custom-css)
-- [Use custom fonts](https://nextjs.org/docs/basic-features/font-optimization)
-
+  <summary className="mb-2">What can I find for each subject?</summary>
+  For each subject, you'll find: - Current assignments and deadlines - Past completed
+  work - Study resources and notes - Important course materials
 </details>
 
 <details open>
-  {/* prettier-ignore */}
-  <summary className="mb-2">How can I add a live coding component in Nextra?</summary>
-  There are libraries like [Sandpack](https://sandpack.codesandbox.io) and
-  [react-live](https://github.com/FormidableLabs/react-live) that can help you
-  add live coding components to your MDX.
+  <summary className="mb-2">Where can I find specific subjects?</summary>
+  You can find assignments for: - [LB (Loopbaan)](/docs/lb) - [Nederlands](/docs/nederlands)
+  - [Engels](/docs/engels) - [Rekenen](/docs/rekenen) - [Software Development](/docs/software)
 </details>

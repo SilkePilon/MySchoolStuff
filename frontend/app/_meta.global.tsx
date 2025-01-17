@@ -167,20 +167,4 @@ export default {
       typesetting: "article",
     },
   },
-  showcase: {
-    type: "page",
-    theme: {
-      typesetting: "article",
-      layout: "full",
-      timestamp: false,
-    },
-  },
-  sponsors: {
-    type: "page",
-    theme: {
-      typesetting: "article",
-      layout: "full",
-      timestamp: false,
-    },
-  },
 };
