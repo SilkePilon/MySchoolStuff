@@ -34,7 +34,7 @@ const IndexPage: FC = () => {
           .
         </p>
         <p className="subtitle">
-          <Link className={styles.cta} href="/docs">
+          <Link className={styles.cta} href="/assignments">
             See Completed Assignments <span>→</span>
           </Link>
         </p>
